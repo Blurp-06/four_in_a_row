@@ -1,5 +1,6 @@
 import json
 
+# If functions is called makes object and dumps it into a JSON file called "SETTINGS.json".
 def setup():
     settings = {
         "WIDTH": 600,

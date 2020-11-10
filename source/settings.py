@@ -1,6 +1,8 @@
 import json
 import json_setup
 
+# Tries to read data from SETTINGS.json file.
+# If file doesn't exists add it with the setup function in "json_setup.py".
 while(True):
     try:
         with open("SETTINGS.json") as f:
@@ -9,6 +11,7 @@ while(True):
     except:
         json_setup.setup()
 
+# Sets value of variables to their value in the json file.
 WIDTH = data["WIDTH"]
 HEIGHT = data["HEIGHT"]
 
