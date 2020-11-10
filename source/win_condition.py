@@ -1,5 +1,6 @@
 from settings import *
 
+# Got it from internet.
 # https://stackoverflow.com/questions/29949169/python-connect-4-check-win-function
 
 def check_win(_board: list, tile: str):
