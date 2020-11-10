@@ -34,7 +34,8 @@ for iteration in range(ROWS):
 
 # Reset function for restart.
 def reset_or_start():
-    global position_x, turn, coins
+    global position_x, turn, coins, still_going
+    still_going = True
     position_x, turn = 0, P1
     coins = []
     for _ in range(COLLUMNS):
